@@ -1,6 +1,5 @@
 package com.example.softwarepatterns4;
 
-import android.graphics.Bitmap;
 
 import java.io.Serializable;
 import java.util.Comparator;
@@ -8,23 +7,24 @@ import java.util.Comparator;
 public class Stock implements Serializable {
     private String title, manufacturer, category;
     private double price;
-    //private Bitmap image;
     private int id, stock, quantity;
     private boolean reviewed;
 
     public Stock() {
     }
 
-    /*public Stock(int id, String title, String manufacturer, String category, double price, Bitmap image) {
-        this.id = id;
-        this.title = title;
-        this.manufacturer = manufacturer;
-        this.category = category;
-        this.price = price;
-        this.image = image;
-    }*/
 
-    public Stock(int id, String title, String manufacturer, String category, double price, int stock) {
+    private Stock(final Builder builder){
+        id = builder.id;
+        title = builder.title;
+        manufacturer=builder.manufacturer;
+        category=builder.category;
+        price=builder.price;
+        stock=builder.stock;
+        quantity=builder.quantity;
+        reviewed=builder.reviewed;
+    }
+    /*public Stock(int id, String title, String manufacturer, String category, double price, int stock) {
         this.id = id;
         this.title = title;
         this.manufacturer = manufacturer;
@@ -52,7 +52,7 @@ public class Stock implements Serializable {
         this.stock = stock;
         this.quantity = quantity;
         this.reviewed = false;
-    }
+    }*/
 
     public String getTitle() {
         return title;
@@ -145,6 +145,50 @@ public class Stock implements Serializable {
 
     public String toStringForCartRV(){
         return "Manufacturer:    " + this.manufacturer + "\n Category:    " + this.category + "\nStock:    " + this.stock + "\nQuantity:    " + this.quantity;
+    }
+
+    static class Builder{
+        private String title, manufacturer, category;
+        private double price;
+        private int id, stock, quantity;
+        private boolean reviewed;
+
+        public Builder setId(final int id){
+            this.id = id;
+            return this;
+        }
+        public Builder setTitle(final String title){
+            this.title = title;
+            return this;
+        }
+        public Builder setManufacturer(final String manufacturer){
+            this.manufacturer = manufacturer;
+            return this;
+        }
+        public Builder setCategory(final String category){
+            this.category = category;
+            return this;
+        }
+        public Builder setPrice(final double price){
+            this.price = price;
+            return this;
+        }
+        public Builder setStock(final int stock){
+            this.stock = stock;
+            return this;
+        }
+        public Builder setQuantity(final int quantity){
+            this.quantity = quantity;
+            return this;
+        }
+        public Builder setReviewed(final boolean reviewed){
+            this.reviewed = reviewed;
+            return this;
+        }
+
+        public Stock create(){return new Stock(this);}
+
+
     }
 
 

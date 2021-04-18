@@ -191,7 +191,8 @@ public class DetailedItem extends AppCompatActivity {
         }else if(rb.getRating()<.5){
             Toast.makeText(DetailedItem.this, "Error: Please leave a star rating!", Toast.LENGTH_SHORT).show();
         }else{
-            Review rev = new Review(reviewText.getText().toString(), id.getText().toString(), fUser.getEmail(), rb.getRating());
+            Review rev = new Review.Builder().setText(reviewText.getText().toString()).setId(id.getText().toString())
+                    .setName(fUser.getEmail()).setStars(rb.getRating()).create();
             dr= FirebaseDatabase.getInstance().getReference("Reviews").child(fUser.getUid()).child(id.getText().toString());
             dr.setValue(rev);
 

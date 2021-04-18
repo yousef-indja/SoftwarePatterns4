@@ -68,8 +68,8 @@ public class EditStock extends AppCompatActivity {
             Toast.makeText(EditStock.this, "Error: Please fill in all fields!", Toast.LENGTH_SHORT).show();
 
         }else{
-            newStock = new Stock(Integer.parseInt(id.getText().toString()), title.getText().toString(), manufacturer.getText().toString(), category.getText().toString(),
-                    Double.parseDouble(price.getText().toString()), Integer.parseInt(stock.getText().toString()));
+            newStock = new Stock.Builder().setId(Integer.parseInt(id.getText().toString())).setTitle(title.getText().toString()).setManufacturer(manufacturer.getText().toString())
+                    .setCategory(category.getText().toString()).setPrice(Double.parseDouble(price.getText().toString())).setStock(Integer.parseInt(stock.getText().toString())).create();
             if(replace == true){
                 dr= FirebaseDatabase.getInstance().getReference("Stock").child(String.valueOf(stck.getId()));
                 dr.removeValue();

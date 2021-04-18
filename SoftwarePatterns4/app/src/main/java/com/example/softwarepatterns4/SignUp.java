@@ -137,7 +137,7 @@ public class SignUp extends AppCompatActivity implements AdapterView.OnItemSelec
                                             Log.d("signUp", "createUserWithEmail:success");
                                             mUser = mAuth.getCurrentUser();
                                             dr = FirebaseDatabase.getInstance().getReference();
-                                            Customer customer = new Customer(name, address, chosenPayment, phone);
+                                            Customer customer = new Customer.Builder().setName(name).setShippingAddress(address).setPaymentMethod(chosenPayment).setPhoneNumber(phone).create();
 
                                             dr.child("Customer").child(mUser.getUid()).child("Details").setValue(customer).addOnSuccessListener(new OnSuccessListener<Void>() {
                                                 @Override
