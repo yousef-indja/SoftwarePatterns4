@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/namelayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="79dp"
+        android:textColorHint="#232323"
+        app:boxCornerRadiusBottomEnd="50dp"
+        app:boxCornerRadiusTopEnd="50dp"
+        app:boxCornerRadiusBottomStart="50dp"
+        app:boxCornerRadiusTopStart="50dp"
+        app:boxStrokeColor="@color/purple_500"
+        app:boxStrokeWidth="2dp"
+        app:hintTextColor="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.10">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textColorHighlight="@color/purple_500"
+            android:textColorHint="@color/purple_500"
+            app:backgroundTint="@color/purple_500"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emaillayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="79dp"
+        android:textColorHint="#232323"
+        app:boxCornerRadiusBottomEnd="50dp"
+        app:boxCornerRadiusTopEnd="50dp"
+        app:boxCornerRadiusBottomStart="50dp"
+        app:boxCornerRadiusTopStart="50dp"
+        app:boxStrokeColor="@color/purple_500"
+        app:boxStrokeWidth="2dp"
+        app:hintTextColor="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textColorHighlight="@color/purple_500"
+            android:textColorHint="@color/purple_500"
+            app:backgroundTint="@color/purple_500"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/addresslayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="79dp"
+        android:textColorHint="#232323"
+        app:boxCornerRadiusBottomEnd="50dp"
+        app:boxCornerRadiusTopEnd="50dp"
+        app:boxCornerRadiusBottomStart="50dp"
+        app:boxCornerRadiusTopStart="50dp"
+        app:boxStrokeColor="@color/purple_500"
+        app:boxStrokeWidth="2dp"
+        app:hintTextColor="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/address"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textColorHighlight="@color/purple_500"
+            android:textColorHint="@color/purple_500"
+            app:backgroundTint="@color/purple_500" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phonelayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="79dp"
+        android:textColorHint="#232323"
+        app:boxCornerRadiusBottomEnd="50dp"
+        app:boxCornerRadiusTopEnd="50dp"
+        app:boxCornerRadiusBottomStart="50dp"
+        app:boxCornerRadiusTopStart="50dp"
+        app:boxStrokeColor="@color/purple_500"
+        app:boxStrokeWidth="2dp"
+        app:hintTextColor="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textColorHighlight="@color/purple_500"
+            android:textColorHint="@color/purple_500"
+            app:backgroundTint="@color/purple_500" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/signUpPassLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="79dp"
+        android:textColorHint="#232323"
+        app:boxCornerRadiusBottomEnd="50dp"
+        app:boxCornerRadiusTopEnd="50dp"
+        app:boxCornerRadiusBottomStart="50dp"
+        app:boxCornerRadiusTopStart="50dp"
+        app:boxStrokeColor="@color/purple_500"
+        app:boxStrokeWidth="2dp"
+        app:hintTextColor="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#000000">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signUpPass"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:ems="10"
+            android:hint="Password (Minimum 6 Characters)"
+            android:inputType="textPersonName|textPassword"
+            android:textColor="#000000"
+            android:textColorHighlight="@color/purple_500"
+            android:textColorHint="@color/purple_500"
+            app:backgroundTint="@color/purple_500" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="370dp"
+        android:layout_height="45dp"
+        android:onClick="signUp"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="345dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.816" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

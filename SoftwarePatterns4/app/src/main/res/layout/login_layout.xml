@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="79dp"
+        android:textColorHint="#232323"
+        app:boxCornerRadiusBottomEnd="50dp"
+        app:boxCornerRadiusTopEnd="50dp"
+        app:boxCornerRadiusBottomStart="50dp"
+        app:boxCornerRadiusTopStart="50dp"
+        app:boxStrokeColor="@color/purple_500"
+        app:boxStrokeWidth="2dp"
+        app:hintTextColor="#232323"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.115">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textColorHighlight="@color/purple_500"
+            android:textColorHint="@color/purple_500"
+            app:backgroundTint="@color/purple_500" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/logIn"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:onClick="logIn"
+        android:text="Log In"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/logInPassLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="79dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#232323"
+        app:boxCornerRadiusBottomEnd="50dp"
+        app:boxCornerRadiusTopEnd="50dp"
+        app:boxCornerRadiusBottomStart="50dp"
+        app:boxCornerRadiusTopStart="50dp"
+        app:boxStrokeColor="@color/purple_500"
+        app:boxStrokeWidth="2dp"
+        app:hintTextColor="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.289"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#000000">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/logInPass"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPersonName|textPassword"
+            android:textColor="#000000"
+            android:textColorHighlight="@color/purple_500"
+            android:textColorHint="@color/purple_500"
+            app:backgroundTint="@color/purple_500" />
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

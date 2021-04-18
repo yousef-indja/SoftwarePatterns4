@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.softwarepatterns4">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Current Stock"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SoftwarePatterns4">
+        <activity android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan">>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SignUp"
+            android:label="Sign Up"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".LogIn"
+            android:label="Log In"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".DetailedItem"
+            android:label="Item Details"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".Cart"
+            android:label="Cart"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".UserPage"
+            android:label="User Page"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".ViewCustomers"
+            android:label="All Customers"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".EditStock"
+            android:label="Edit Stock"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+
+
+    </application>
+
+</manifest>
